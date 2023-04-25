@@ -1,0 +1,58 @@
+.navbar {
+  // background-color: $backgroundColor;
+  .navbar-brand {
+    font-family: $logo;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .nav-item {
+    margin: 1rem 2rem 1rem 0;
+ 
+    .nav-link {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 0.5rem;
+      color: $colorTuMejorAmigo;
+    }
+  }
+}
+// Boton Login
+.login {
+  text-transform: uppercase;
+  border: 2px solid $colorTuMejorAmigo;
+  font-weight: 700;
+  letter-spacing: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 2s;
+  &:hover {
+    a{
+      color: white;
+    }
+   
+  }
+
+  a {
+    color: $colorTuMejorAmigo;
+    transition: color 2s;
+  
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colorBtn;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+
+  &:hover::before {
+    transform: translateX(0%);
+  }
+}

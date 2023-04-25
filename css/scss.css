@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *   ,
+ * 8 |   --#{$prefix}btn-color: #{$color};
+ *   |       ^^^^^^^
+ *   '
+ *   scss\_mixin.scss 8:7   button-outline-variant()
+ *   scss\_index.scss 63:3  @import
+ *   scss\scss.scss 5:9     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 8 \2502    --#{$prefix}btn-color: #{$color};\d\a   \2502        ^^^^^^^\a   \2575 \a   scss\\_mixin.scss 8:7   button-outline-variant()\a   scss\\_index.scss 63:3  @import\a   scss\\scss.scss 5:9     root stylesheet";
+}

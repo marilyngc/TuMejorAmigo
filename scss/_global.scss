@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+
+  //background-color: $backgroundColor;
+  font-family: $font-family-base;
+  
+
+  
+  
+}
+.font-text {
+  // letter-spacing: -0.05em;
+  // font-family: $tittleH1;
+  // color: white;
+font-family: open sans;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: transparent;
+  background-color: #000000;
+  text-shadow: 2px 2px 3px rgba($color: rgb(29, 29, 31), $alpha: 0.8);
+  -webkit-background-clip: text;
+  -moz-background-clip:text;
+  background-clip: text;
+
+}
