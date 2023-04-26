@@ -7,7 +7,7 @@ body {
 
   //background-color: $backgroundColor;
   font-family: $font-family-base;
-  
+
 
   
   
@@ -26,4 +26,15 @@ font-family: open sans;
   -moz-background-clip:text;
   background-clip: text;
 
+}
+// BTN 
+.btn-send {
+  color: #fff;
+  background-color: $colorBtn;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.625rem 2rem;
+  border-radius: 0.375rem;
+  border-color: $colorTuMejorAmigo;
+  border-width: 0;
 }
