@@ -69,10 +69,10 @@
   <body class="d-flex flex-column min-vh-100 m-0 bg-light">
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-expand-sm navbar-light fixed-top bg-light py-2 px-md-3 rounded"
+        class="navbar navbar-expand-lg navbar-expand-sm navbar-light  shadow fixed-top bg-light py-1 px-md-3 "
       >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html" alt="Nombre de la pagina">
+        <div class="container-fluid ">
+          <a class="navbar-brand px-2" href="index.html" alt="Nombre de la pagina">
             <svg
               width="121"
               height="20"
@@ -141,29 +141,42 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0  w-lg-25 ms-0 ms-lg-auto">
               <li class="nav-item mx-3 my-0">
                 <a
-                  class="nav-link active"
+                  class="nav-link active "
                   aria-current="page"
                   href="#section2"
                   >Ser cuidador</a
                 >
               </li>
               <li class="nav-item mx-3 my-0">
-                <a class="nav-link" href="#section4">Registrarse</a>
+                <a class="nav-link link-offset-3" href="#section4">Registrarse</a>
               </li>
              
-            </ul>
-            <span class="navbar-text"> </span>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            </ul> 
+           
+           
+            <span class="navbar-text"></span>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+           
+            
               <button
                 type="button"
-                class="btn btn-lg rounded-pill px-4 py-2 me-4 border-2 login"
+                class="btn  fw-bolder me-4 login  mb-2 mb-lg-0"
               >
-                <a class="text-decoration-none" href="pages/login.html"
-                  >Iniciar Sesión</a
-                >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <svg>
+                <rect x="0" y="0" fill="none">
+
+                </rect>
+              </svg>
+              Iniciar Sesión
+            
+            
               </button>
             </div>
           </div>
@@ -171,9 +184,9 @@
       </nav>
     </header>
     <main >
-      <section id="section1" class="container-fluid  d-flex row justify-content-center " >
+      <section id="section1" class=" container-fluid d-flex row justify-content-center  " >
          <!-- Background IMG -->
-        <div class=" position-relative-make">
+        <div class="  position-relative-make">
          
         
         </div>
@@ -202,11 +215,11 @@
           <div class="btn-group " role="group" aria-label="First group">
             <button
               type="button"
-              class="btn btn-outline-white icon-link icon-link-hover rounded-4 btn-service"
+              class="btn btn-outline-white icon-link icon-link-hover rounded-4  btn-service"
               style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
               href="#"
             >
-              <i class="bi bi-hand-thumbs-up mb-2 me-2"
+              <i class="bi bi-hand-thumbs-up mb-2 me-2 "
                 ><use xlink:href="#box-seam"></use
               ></i>
 
@@ -278,93 +291,64 @@
       </div>
       </section>
 
-      <section id="section2">
-   <div class="container d-flex  flex-column justify-content-center align-items-center py-5">
+      <section id="section2 ">
+   <div class="container d-flex  flex-column justify-content-center align-items-center   ">
     <h3 class="fw-bold font-uppercase" >¿Cómo funciona?</h3>
-   <div class="w-75  my-5 ">
+   <div class="w-75  my-5  d-none d-sm-block ">
     <div class="position-relative m-4 ">
       <div class="progress " role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
-        <div class="progress-bar bg-warning " style="width: 100%"></div>
+        <div class="progress-bar bg-warning opacity-25 " style="width: 100%"></div>
       </div>
-      <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-warning rounded-pill" style="width: 4rem; height:4rem;">1</button>
-      <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-warning rounded-pill" style="width: 4rem; height:4rem;">2</button>
-      <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-warning rounded-pill" style="width: 4rem; height:4rem;">3</button>
+      <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-warning rounded-pill fw-bold  numbersProgress" style="width: 3rem; height:3rem;">1</button>
+      <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-warning rounded-pill fw-bold numbersProgress" style="width: 3rem; height:3rem;">2</button>
+      <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-warning rounded-pill fw-bold numbersProgress" style="width: 3rem; height:3rem;">3</button>
     </div>
    </div>
       
    
-    <div class="d-flex flex-wrap align-items-center justify-content-center w-100">
-      <div class="card cardInfo text-center mb-3 me-5 " style="width: 18rem;">
-        <div class="card-body">
+    <div class="d-flex flex-wrap align-items-center justify-content-between  w-100">
+      <div class="card cardInfo text-center mb-3 mb-xs-1 mx-2 mx-xs-1 " style="width: 25rem;">
+        <div class="card-body ">
           <h5 class="card-title fw-bold">Completar el formulario</h5>
           <p class="card-text">Elegí el tipo de servicio que necesitás, la fecha en la que querés reservar y completá con la información de tu mascota.</p>
     
         </div>
       </div >
-      <div class="card cardInfo text-center mb-3 me-5 " style="width: 18rem;">
+      <div class="card cardInfo text-center mb-3 mb-xs-1 mx-2 mx-xs-1 " style="width: 25rem;">
         <div class="card-body">
           <h5 class="card-title fw-bold">Esperar confirmación</h5>
           <p class="card-text">Te contactamos para brindarte toda la información sobre el cuidado y el prestador de nuestro equipo elegido.</p>
         
         </div>
       </div>
-      <div class="card cardInfo text-center mb-3 me-5 " style="width: 18rem;">
+      <div class="card cardInfo text-center mb-3 mb-xs-1 mx-2 mx-xs-1 " style="width: 25rem;">
         <div class="card-body">
           <h5 class="card-title fw-bold">Disfrutar el servicio</h5>
           <p class="card-text">Pagá para confirmar la reserva y disfrutá de tus actividades con la tranquilidad de que tu mascota está bien cuidad</p>
           
         </div>
       </div>
+     
     </div>
-    <div class="d-grid gap-2 col-3 mx-auto my-4 ">
+    <div class="d-grid gap-2 col-3 mx-auto  mx-sm-auto my-5 ">
       <button type="button" class=" btn-lg  btn-send py-3">
         Reservar
       </button>
     </div>
    </div>
       </section>
-      <!-- <section id="sec2">
-
-        <div class="container my-5 py-5 section-text">
-          <div class="row">
-            <div
-              class="col-xs-12 col-md-5 col-lg-6 fw-bolder fst-italic color-text"
-            >
-              <p>Out there</p>
-            </div>
-            <div
-              class="col-xs-12 col-md-5 col-lg-6 text-center fs-1 text-light lead"
-            >
-              Join us on an
-              <span class="color-primary">epic journey</span> through in this
-              pages and you'll discover
-              <span class="color-secondary">danger animals</span> and beautiful
-              <span class="color-third">submarine animals</span>
-            </div>
-          </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-star mt-5 pt-5">
-            <button
-              type="button"
-              class="btn btn-lg rounded-pill px-5 border-2 login"
-            >
-              <a class="text-decoration-none" href="# "
-                >Discore more of our work</a
-              >
-            </button>
-          </div>
-        </div>
-      </section> -->
+   
      <section id="section3"class="container-fluid ">
-      <img src="./img/section3/dog.png" class="img-fluidd imgSticker " alt="">
+      <img src="./img/section3/dog.png" class="img-fluidd imgSticker  d-none d-sm-block" alt="">
        <div class="d-flex flex-column justify-content-center align-items-center py-5">
         <div class="col-md-8 col-12 d-flex flex-column justify-content-center align-items-center text-white">
           <h5 class="fw-normal  opacity-75  my-4 text-uppercase">Seguridad</h5>
-          <h4 class="fw-bold mb-4"> ¿Por qué Tu Mejor Amigo?</h4>
-          <h6 class="mb-4">El bienestar de tu mascota es nuestra prioridad.</h6>
+          <h2 class="fw-bold mb-4"> ¿Por qué Tu Mejor Amigo?</h2>
+          <h4 class="mb-4">El bienestar de tu mascota es nuestra prioridad.</h4>
         </div>
         <div class="container  row row-cols-1 row-cols-md-2 g-4 m-3 ">
           <div class="col">
-            <div class="card cardInfo text-white mb-5 me-5 " style="max-width: 700px;">
+            <div class="card cardInfo text-white mb-1 mb-lg-5  me-lg-5 " style="max-width: 700px;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="./img/section3/prestador.png" class="img-fluid rounded-start" alt="...">
@@ -380,7 +364,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card cardInfo text-white mb-5 me-5 " style="max-width: 700px;">
+            <div class="card cardInfo text-white mb-1 mb-lg-5  me-lg-5 " style="max-width: 700px;">
               <div class="row g-0">
                 <div class="col-md-4 ">
                   <img src="./img/section3/encuentro.png" class="img-fluid rounded-start" alt="...">
@@ -396,7 +380,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card cardInfo text-white mb-5 me-5 " style="max-width: 700px;">
+            <div class="card cardInfo text-white mb-1 mb-lg-5  me-lg-5 " style="max-width: 700px;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="./img/section3/contacto.png" class="img-fluid rounded-start" alt="...">
@@ -412,7 +396,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card cardInfo text-white mb-5 me-5 " style="max-width: 700px;">
+            <div class="card cardInfo text-white mb-1 mb-lg-5  me-lg-5 " style="max-width: 700px;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="./img/section3/cobertura.png" class="img-fluid rounded-start" alt="...">
@@ -493,6 +477,37 @@
           </div>
         </div>
       </section> 
+         <section id="sec2">
+
+        <div class="container my-5 py-5 section-text">
+          <div class="row">
+            <div
+              class="col-xs-12 col-md-5 col-lg-6 fw-bolder fst-italic color-text"
+            >
+              <p>Out there</p>
+            </div>
+            <div
+              class="col-xs-12 col-md-5 col-lg-6 text-center fs-1 text-light lead"
+            >
+              Join us on an
+              <span class="color-primary">epic journey</span> through in this
+              pages and you'll discover
+              <span class="color-secondary">danger animals</span> and beautiful
+              <span class="color-third">submarine animals</span>
+            </div>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-star mt-5 pt-5">
+            <button
+              type="button"
+              class="btn btn-lg rounded-pill px-5 border-2 login"
+            >
+              <a class="text-decoration-none" href="# "
+                >Discore more of our work</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- FOOTER -->
 

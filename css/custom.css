@@ -11884,11 +11884,6 @@ body {
   border-width: 0;
 }
 
-.navbar .navbar-brand {
-  font-family: "Sigmar One", cursive;
-  font-size: 2rem;
-  padding-left: 1rem;
-}
 .navbar .nav-item {
   margin: 1rem 2rem 1rem 0;
 }
@@ -11901,35 +11896,109 @@ body {
 }
 
 .login {
-  text-transform: uppercase;
-  border: 2px solid #695997;
-  font-weight: 700;
-  letter-spacing: 4px;
   position: relative;
-  overflow: hidden;
-  transition: all 2s;
-}
-.login:hover a {
-  color: white;
-}
-.login a {
+  display: inline-block;
+  padding: 10px 20px;
   color: #695997;
-  transition: color 2s;
+  font-size: 12px;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 4px;
+  transition: all 1.5s ease-out;
 }
-.login::before {
-  content: "";
+.login:hover span {
   position: absolute;
-  left: 0;
+  display: block;
+}
+.login:hover span:nth-child(1) {
   top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #827AB6);
+  animation: btn-anim1 2s linear infinite;
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.login:hover span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #827AB6);
+  animation: btn-anim2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.login:hover span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #827AB6);
+  animation: btn-anim3 2s linear infinite;
+  animation-delay: 0.95s;
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+.login:hover span:nth-child(4) {
+  left: 0;
+  bottom: -100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #827AB6);
+  animation: btn-anim4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+.login svg {
   width: 100%;
   height: 100%;
-  background-color: #827AB6;
-  z-index: -1;
-  transform: translateX(-100%);
-  transition: all 2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
 }
-.login:hover::before {
-  transform: translateX(0%);
+
+.login rect {
+  width: 100%;
+  height: 100%;
+  stroke: #827AB6;
+  stroke-width: 4px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  transition: 0.6s ease all;
+}
+
+.login:hover rect {
+  stroke-dashoffset: 1000;
 }
 
 .btn-outline-info {
@@ -11973,19 +12042,18 @@ section {
 }
 
 #section1 {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 #section1 .position-relative-make {
-  position: relative;
   width: 100%;
-  height: 60%;
+  height: 70%;
   background-image: url(../img/index/vista-frontal-hermoso-perro-espacio-copia.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #section1 .position {
   position: absolute;
-  top: 13%;
+  top: 15%;
   left: 60%;
   width: 50vh;
   padding: 20px;
@@ -12001,7 +12069,7 @@ section {
 #section1 .box-info {
   background-color: #695997;
   position: absolute;
-  top: 57%;
+  top: 55%;
   width: 1100px;
   border-radius: 30px;
   padding: 20px;
@@ -12012,7 +12080,12 @@ section {
   font-weight: bold;
 }
 #section1 .box-info .btn-service {
-  padding: 1.5rem 6rem 1.5rem 1rem;
+  padding: 1.5rem 5rem 1.5rem 1rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+#section1 .box-info .btn-service:active {
+  border: 4px solid #827AB6;
 }
 #section1 .btn-outline-white {
   --bs-btn-color: white;
@@ -12033,18 +12106,22 @@ section {
   margin: 5px;
 }
 
-.cardInfo {
-  border: none;
-  background-color: transparent;
-}
-
 .font-uppercase {
   font-weight: 700;
 }
 
 section:nth-child(2) {
-  margin-top: 10px;
   height: 60vh;
+}
+
+.numbersProgress {
+  color: white;
+  font-size: 20px;
+}
+
+.cardInfo {
+  border: none;
+  background-color: transparent;
 }
 
 section:nth-child(3) {
@@ -12060,7 +12137,7 @@ section:nth-child(3) .imgSticker {
 @media (max-width: 768px) {
   #section1 {
     position: relative;
-    height: 85rem;
+    height: 220vh;
   }
   #section1 .position-relative-make {
     position: absolute;
@@ -12092,7 +12169,7 @@ section:nth-child(3) .imgSticker {
   }
   section:nth-child(2) {
     margin-top: 10px;
-    height: 100vh;
+    height: max-content;
   }
   section:nth-child(3) {
     height: max-content;
