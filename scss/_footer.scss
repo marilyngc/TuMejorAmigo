@@ -8,31 +8,24 @@
   );
 }
 
-footer{
-  width: 100%;
-  height: 25vh;
-
-overflow: hidden;
-
-  background-image: url(../img/asset/wave.svg);
-  background-size: contain;
-  background-position: bottom ;
-  background-repeat: repeat-x;
+.footerRedes{
+  background-color: $colorTuMejorAmigo;
   
-
-// background-color: rgba(0, 0, 0, 0.178);
-//   -webkit-mask-image: url("../img/asset/2.svg");
-//   mask-image: url("../img/asset/2.svg");
-// -webkit-mask-size:cover;
-//   mask-size: cover;
-  animation: wave 10s linear infinite;
 }
 
-@keyframes wave {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
+.footerLinks ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  height: 5px;
+  width: 50px;
+  background: #2b14ff;
+}
+ul li a{
+  color: black;
+&:hover{
+  color: rgb(164, 100, 237);
+  
   }
 }

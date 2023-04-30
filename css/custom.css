@@ -12018,25 +12018,27 @@ body {
   --bs-gradient: none;
 }
 
-footer {
-  width: 100%;
-  height: 25vh;
-  overflow: hidden;
-  background-image: url(../img/asset/wave.svg);
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: repeat-x;
-  animation: wave 10s linear infinite;
+.footerRedes {
+  background-color: #695997;
 }
 
-@keyframes wave {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+.footerLinks ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  height: 5px;
+  width: 50px;
+  background: #2b14ff;
 }
+
+ul li a {
+  color: black;
+}
+ul li a:hover {
+  color: rgb(164, 100, 237);
+}
+
 section {
   background-color: #695997;
   height: 90vh;
