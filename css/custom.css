@@ -12141,6 +12141,61 @@ section:nth-child(3) .imgSticker {
   top: -260px;
 }
 
+section:nth-child(4) {
+  height: max-content;
+}
+
+.cardDog {
+  width: 400px;
+  margin: 30px;
+  transition: all 300ms;
+  background-color: transparent;
+  border: none;
+}
+
+.cardDog:hover {
+  width: 415px;
+}
+
+.card .cover {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .cover img {
+  width: 30%;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+
+.card:hover .cover img {
+  top: 0px;
+  filter: none;
+}
+
+.card .img-back {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  border-radius: 20px;
+  transition: all 300ms;
+}
+
+.card:hover .img-back {
+  bottom: -50px;
+}
+
 .colorText:nth-child(1) {
   color: #16feff;
 }
@@ -12166,6 +12221,7 @@ section:nth-child(3) .imgSticker {
 }
 .loginInverse:hover {
   color: white;
+  font-size: 13px;
 }
 
 .loginInverse svg {
@@ -12188,7 +12244,7 @@ section:nth-child(3) .imgSticker {
 }
 
 .loginInverse:hover rect {
-  stroke-dashoffset: -450;
+  stroke-dashoffset: -1000;
 }
 
 @media (max-width: 768px) {
@@ -12244,77 +12300,6 @@ section:nth-child(3) .imgSticker {
 //////// NEWS //////////
 ///////////////////////*/
 /*TOP CARDS*/
-.container__cards {
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cardDog {
-  width: 300px;
-  margin: 30px;
-  transition: all 300ms;
-  background-color: transparent;
-  border: none;
-}
-
-.cardDog:hover {
-  width: 350px;
-}
-
-.card .cover {
-  width: 100%;
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  background-color: none;
-}
-.card .cover .card-body {
-  background-color: white;
-  color: rgb(29, 29, 31);
-  box-shadow: 1rem 1rem 2rem rgb(12, 14, 17);
-  border-radius: 0px 0px 20px 20px;
-}
-
-.card .cover img {
-  width: 100%;
-  display: block;
-  margin: auto;
-  position: relative;
-  top: 40px;
-  z-index: 1;
-  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
-  transition: all 400ms;
-}
-
-.card:hover .cover img {
-  top: -40px;
-  filter: none;
-}
-
-.card .img-back {
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: -80px;
-  left: 0;
-  background-size: cover;
-  border-radius: 20px;
-  transition: all 300ms;
-  background-image: url(../img/news/bg1.svg);
-}
-
-.card:nth-child(even) .img-back {
-  background-image: url(../img/news/bg2.svg);
-}
-
-.card:hover .img-back {
-  bottom: -40px;
-}
-
 @media (max-width: 768px) {
   /**  LOGIN.HTML  **/
   .container .form {

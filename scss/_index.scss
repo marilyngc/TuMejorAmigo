@@ -91,7 +91,6 @@ background-color: white;
 }
 
 section:nth-child(2) {
- // margin-top: 10px;
   height: 60vh;
 
 }
@@ -105,6 +104,75 @@ section:nth-child(3) {
     top: -260px;
   }
 }
+
+section:nth-child(4){
+  height: max-content;
+}
+// SECTION 4
+
+
+
+  .cardDog{
+    width: 400px;
+    margin: 30px;
+    transition: all 300ms;
+  background-color: transparent;
+border: none;
+  }
+
+.cardDog:hover{
+ width: 415px;
+}
+
+.card .cover{
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+
+  
+}
+
+.card .cover img{
+width:30%;
+
+
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+object-fit: cover;
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+  transition: all 400ms;
+}
+
+.card:hover .cover img{
+  top: 0px;
+  filter: none;
+}
+
+.card .img-back{
+  width: 100%;
+  height: 150px;
+  position: absolute;
+bottom: -60px;
+  left: 0;
+
+  border-radius: 20px;
+  transition: all 300ms;
+
+
+}
+
+
+
+
+.card:hover .img-back{
+  bottom: -50px;
+}
+
 
 .colorText:nth-child(1){
   color:$colorCelest;
@@ -130,6 +198,7 @@ section:nth-child(3) {
   transition: all 1.5s ease-out;
   &:hover{
     color: white;
+    font-size: 13px;
   }
 }
 
@@ -153,7 +222,7 @@ section:nth-child(3) {
 }
 
 .loginInverse:hover rect{
-  stroke-dashoffset: -450;
+  stroke-dashoffset: -1000;
 }
 
 
