@@ -1,9 +1,9 @@
 .btn-outline-info {
   @include button-outline-variant(
-    $colorViolet,
+    $colorBtn,
     $color-hover: color-contrast($backgroundColor),
-    $active-background: $colorViolet,
-    $active-border: $colorViolet,
+    $active-background: $colorBtn,
+    $active-border: $colorBtn,
     $active-color: color-contrast($backgroundColor)
   );
 }
