@@ -12316,6 +12316,34 @@ section:nth-child(4) {
     background: white;
     box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.5);
   }
+  .form-control:focus {
+    border: 1px solid #827AB6;
+    box-shadow: 1px 0px 10px #827AB6;
+  }
+  .formGroupCorrect .formGroupInput .formValidationActive {
+    color: rgb(123, 187, 27);
+    font-size: 20px;
+    position: absolute;
+    right: 17px;
+    top: -42px;
+    z-index: 100;
+  }
+  .formGroupInCorrect .form-control {
+    color: #bb2929;
+    border: 1px solid #bb2929;
+    box-shadow: none;
+  }
+  .formGroupInCorrect .formGroupInput {
+    position: relative;
+  }
+  .formGroupInCorrect .formGroupInput .formValidationState {
+    color: #bb2929;
+    font-size: 20px;
+    position: absolute;
+    right: 17px;
+    top: -42px;
+    z-index: 100;
+  }
   .form:nth-child(1) {
     background-image: url(../img/blob-scene-haikei.svg);
     background-size: cover;

@@ -107,7 +107,7 @@
               </button>
             </div>
           </div>
-          <div class="form col me-3 rounded-end">
+          <div class="form col me-3  rounded-end">
             <div class="d-grid gap-2 d-md-block text-center my-4">
               <h1 class="fw-bold mb-4">Registrate</h1>
               <div>
@@ -136,98 +136,148 @@
               </div>
             </div>
 
-            <form action="">
+            <form action="" class="mt-4" id="form">
               <div class="row px-5">
-                <div class="form-floating colorForm mb-3 col-6">
+<!-- 
+                Grupo nombre -->
+                <div class="form-floating    mb-3 col-6">
                   <input
                     type="text"
-                    required
+                 
                     autocomplete="off"
-                    class="form-control"
+                    class="form-control   "
                     id="floatingFirtsName"
                     placeholder="name@example.com"
                   />
+              
                   <label for="floatingFirtsName">Nombre</label>
+                  <div class="formGroupInput ">
+                    <i class="formValidationActive  d-none bi bi-emoji-smile"></i>
+                    <i class="formValidationState d-none  bi bi-emoji-frown"></i>
+                    <p class="formInputError d-none "> El nombre solo puede contener letras y guion bajo.</p>
+                  </div>
+                 
                 </div>
+
+                <!-- Grupo Apellido -->
                 <div class="form-floating col-6">
                   <input
                     type="text"
-                    required
+                
                     autocomplete="off"
                     class="form-control"
                     id="floatingLastName"
                     placeholder="Password"
                   />
                   <label for="floatingLastName">Apellido</label>
+                  <div class="formGroupInput d-none">
+                    <i class="formValidationState bi bi-emoji-frown"></i>
+                    <p class="formInputError"> El apellido tiene que ser de 4 a 6 digitos y no puede contener numeros o guiones de ningún tipo.</p>
+                  </div>
+                 
                 </div>
               </div>
 
               <div class="col px-5">
+                <!-- Grupo Email -->
                 <div class="form-floating mb-3">
                   <input
                     type="email"
-                    required
+               
                     autocomplete="off"
                     class="form-control"
                     id="floatingInput"
                     placeholder="name@example.com"
                   />
                   <label for="floatingInput">Email </label>
+                   <div class="formGroupInput d-none">
+                    <i class="formValidationState bi bi-emoji-frown"></i>
+                    <p class="formInputError"> El email solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+                  </div>
+               
                 </div>
+                <!-- Grupo Telefono -->
                 <div class="form-floating mb-3">
                   <input
                     type="tel"
-                    required
+                
                     autocomplete="off"
                     class="form-control"
                     id="floatingPhone"
                     placeholder="Phone"
                   />
                   <label for="floatingPhone">Teléfono</label>
+                   <div class="formGroupInput d-none">
+                    <i class="formValidationState bi bi-emoji-frown"></i>
+                  <p class="formInputError"> El telefono solo puede contener números y el maximo de 11 digitos</p>
+                  </div>
+                  
                 </div>
+                <!-- Grupo contraseña -->
                 <div class="form-floating mb-3">
                   <input
                     type="password"
-                    required
+         
                     autocomplete="off"
                     class="form-control"
                     id="floatingPassword"
                     placeholder="Password"
                   />
                   <label for="floatingPassword">Contraseña</label>
+                   <div class="formGroupInput d-none">
+                    <i class="formValidationState bi bi-emoji-frown"></i>
+                  <p class="formInputError"> La contraseña tiene que tener de 4 a 12 digitos.</p>
+                  </div>
+                  
                 </div>
+                <!-- Grupo contraseña 2 -->
                 <div class="form-floating mb-3">
                   <input
                     type="password"
-                    required
+              
                     autocomplete="off"
                     class="form-control"
-                    id="floatingPassword"
+                    id="floatingRepitPassword"
                     placeholder="Password"
                   />
-                  <label for="floatingPassword">Confirmar contraseña</label>
+                  <label for="floatingRepitPassword">Confirmar contraseña</label>
+                   <div class="formGroupInput d-none">
+                    <i class="formValidationState bi bi-emoji-frown"></i>
+                    <p class="formInputError"> Las contraseñas tienen que ser iguales</p>
+                  </div>
+                 
                 </div>
-
-                <div class="form-check form-switch">
-                  <input
+                     <!-- Grupos terminos y condiciones -->
+                <div class="form-check form-switch mb-3">
+                
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >He leído y acepto los <a>términos y condiciones </a> de
+                    uso 
+                    <input
                     class="form-check-input"
                     type="checkbox"
                     role="switch"
                     id="flexSwitchCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexSwitchCheckDefault"
-                    >He leído y acepto los <a>términos y condiciones </a> de
-                    uso</label
+                  /></label
                   >
                 </div>
+                <!-- Grupo Error -->
+                <div class="formMessage d-none d-flex justify-content-center  w-100 bg-danger rounded">
+                  <p class="fs-5 pt-2"><i class="bi bi-exclamation-diamond me-1"></i> <b> Error:</b> Por  favor rellenar el formulario correctamente</p>
+                </div>
               </div>
+            
               <div
                 class="d-flex justify-content-center align-items-center my-5"
               >
               <button class="learn-more">Continuar</button>
                
               </div>
+
+
+              <p class="warnings d-none m-auto w-auto  text-center text-success fw-semibold" >Registrado exitosamente!</p>
             </form>
+  
           </div>
         </div>
       </section>
@@ -502,6 +552,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/index.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
