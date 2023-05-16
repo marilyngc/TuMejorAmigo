@@ -108,40 +108,50 @@
     box-shadow: 1px 0px 10px $colorBtn;
  
   }
+
+
+
+
 .formGroupCorrect{
  
-  .formGroupInput{
     .formValidationActive{
+
       color: rgb(123, 187, 27);
       font-size: 20px;
-      position: absolute;
+     
       right: 17px;
       top: -42px;
       z-index: 100;
       
     }
-  }
+  
+
 }
 
+
+ 
+  
+
+
 .formGroupInCorrect{
+ 
   .form-control{
     color: #bb2929;
     border:1px solid #bb2929;
     box-shadow: none;
   }
-  .formGroupInput{
-    position: relative;
+ 
   .formValidationState{
     color: #bb2929;
     font-size: 20px;
-    position: absolute;
+
     right: 17px;
     top: -42px;
     z-index: 100;
     
   }
 
-}
+
 }
 
  

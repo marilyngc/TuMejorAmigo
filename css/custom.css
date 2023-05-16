@@ -12320,10 +12320,9 @@ section:nth-child(4) {
     border: 1px solid #827AB6;
     box-shadow: 1px 0px 10px #827AB6;
   }
-  .formGroupCorrect .formGroupInput .formValidationActive {
+  .formGroupCorrect .formValidationActive {
     color: rgb(123, 187, 27);
     font-size: 20px;
-    position: absolute;
     right: 17px;
     top: -42px;
     z-index: 100;
@@ -12333,13 +12332,9 @@ section:nth-child(4) {
     border: 1px solid #bb2929;
     box-shadow: none;
   }
-  .formGroupInCorrect .formGroupInput {
-    position: relative;
-  }
-  .formGroupInCorrect .formGroupInput .formValidationState {
+  .formGroupInCorrect .formValidationState {
     color: #bb2929;
     font-size: 20px;
-    position: absolute;
     right: 17px;
     top: -42px;
     z-index: 100;
