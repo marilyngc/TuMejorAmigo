@@ -11,11 +11,11 @@ const expresiones = {
 }
 
 const fields = {
-  Name : false,
-  LastName : false,
-  Email : false,
-  Phone : false,
-  Password : false
+  name : false,
+  lastName : false,
+  email : false,
+  phone : false,
+  password : false
 
  
 }
@@ -60,8 +60,14 @@ const validateField = (expression,input,field) => {
     document.querySelector(`#formGroup${field} i`).classList.remove("formValidationState")
     document.querySelector(`#formGroup${field} p`).classList.add("d-none")
   
-    fields[field] = true
-
+    
+    fields["name"] = true;
+    fields["lastName"] = true;
+    fields["email"] = true;
+    fields["phone"] = true;
+    fields["password"] = true;
+   
+    
 
 
  }else{
@@ -74,7 +80,16 @@ const validateField = (expression,input,field) => {
     document.querySelector(`#formGroup${field} i`).classList.add("bi-emoji-frown")
     document.querySelector(`#formGroup${field} p`).classList.remove("d-none")
 
-    fields[field] = false
+
+   
+    
+    fields["name"] = false;
+    fields["lastName"] = false;
+    fields["email"] = false;
+    fields["phone"] = false;
+    fields["password"] = false;
+   
+    
  }
 }
 
@@ -94,7 +109,7 @@ const validatePassword = () => {
     document.querySelector(`#formGroupRepeatPassword p`).classList.remove("d-none")
   
 
-    fields[`password`] = false
+    fields['password'] = false
   }else{
     document.getElementById(`formRepeatPassword`).classList.remove("formGroupInCorrect")
     document.getElementById(`formRepeatPassword`).classList.add("formGroupCorrect")
@@ -105,7 +120,7 @@ const validatePassword = () => {
     document.querySelector(`#formGroupRepeatPassword i`).classList.remove("formValidationState")
 
     document.querySelector(`#formGroupRepeatPassword p`).classList.add("d-none")
-    fields[`password`] = true
+    fields['password'] = true
   }
 }
 inputs.forEach((input) => {
@@ -116,20 +131,23 @@ inputs.forEach((input) => {
 form.addEventListener("submit", (e) => {
  e.preventDefault();
 
- const terms = document.getElementById("terms");
+ const terms = document.getElementById("flexSwitchCheckDefault");
 
- if (fields.name && fields.lastName && fields.email && fields.phone && fields.password && terms.checked) {
-  console.log("egege")
+ if (fields.name && fields.lastName && fields.email && fields.phone && fields.password && terms.checked ) {
   form.reset();
 
+
+
+  document.getElementById("messageError").classList.add("d-none");
   document.getElementById("formSend").classList.remove("d-none")
   setTimeout(() => {
     document.getElementById("formSend").classList.add("d-none")
   }, 5000)
 
-  document.querySelectorAll(".formGroupCorrect").forEach((icon) =>{
-      icon.classList.remove("formGroupCorrect")
+  document.querySelectorAll(".boxInteractive").forEach((i) =>{
+      i.classList.add("d-none")
   });
+
 }else{
   document.getElementById("messageError").classList.remove("d-none");
 }

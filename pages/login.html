@@ -152,7 +152,7 @@
               
                   <label for="floatingFirtsName">Nombre</label>
              
-                  <div class=" d-none position-relative " id="formGroupName" >
+                  <div class="boxInteractive d-none position-relative " id="formGroupName" >
                     <i class="   bi bi-emoji-frown position-absolute"></i>
                     <p class="formInputError  "> El nombre solo puede contener letras y guion bajo.</p>
                   </div>
@@ -170,7 +170,7 @@
                     placeholder="Password"
                   />
                   <label for="floatingLastName">Apellido</label>
-                  <div class=" d-none position-relative" id="formGroupLastName" >
+                  <div class=" boxInteractive d-none position-relative" id="formGroupLastName" >
                     <i class=" bi bi-emoji-frown position-absolute"></i>
                     <p class="formInputError"> El apellido tiene que ser de 4 a 6 digitos y no puede contener numeros o guiones de ningún tipo.</p>
                   </div>
@@ -190,7 +190,7 @@
                     placeholder="name@example.com"
                   />
                   <label for="floatingInput">Email </label>
-                   <div class=" d-none position-relative" id="formGroupEmail" >
+                   <div class="boxInteractive d-none position-relative" id="formGroupEmail" >
                     <i class=" bi bi-emoji-frown position-absolute"></i>
                     <p class="formInputError"> El email solo puede contener letras, números, puntos, guiones y guion bajo.</p>
                   </div>
@@ -207,7 +207,7 @@
                     placeholder="Phone"
                   />
                   <label for="floatingPhone">Teléfono</label>
-                   <div class=" d-none position-relative" id="formGroupPhone" >
+                   <div class="boxInteractive d-none position-relative" id="formGroupPhone" >
                     <i class="bi bi-emoji-frown position-absolute"></i>
                   <p class="formInputError"> El telefono solo puede contener números y el maximo de 11 digitos</p>
                   </div>
@@ -224,7 +224,7 @@
                     placeholder="Password"
                   />
                   <label for="floatingPassword">Contraseña</label>
-                   <div class=" d-none position-relative"id="formGroupPassword" >
+                   <div class="boxInteractive d-none position-relative"id="formGroupPassword" >
                     <i class=" bi bi-emoji-frown position-absolute"></i>
                   <p class="formInputError"> La contraseña tiene que tener de 4 a 12 digitos.</p>
                   </div>
@@ -241,14 +241,14 @@
                     placeholder="Password"
                   />
                   <label for="floatingRepitPassword">Confirmar contraseña</label>
-                   <div class=" d-none position-relative" id="formGroupRepeatPassword">
+                   <div class="boxInteractive d-none position-relative" id="formGroupRepeatPassword">
                     <i class=" bi bi-emoji-frown position-absolute"></i>
                     <p class="formInputError"> Las contraseñas tienen que ser iguales</p>
                   </div>
                  
                 </div>
                      <!-- Grupos terminos y condiciones -->
-                <div class="form-check form-switch mb-3" id="terms">
+                <div class="form-check form-switch mb-3" >
                 
                   <label class="form-check-label" for="flexSwitchCheckDefault"
                     >He leído y acepto los <a>términos y condiciones </a> de
@@ -262,20 +262,19 @@
                   >
                 </div>
                 <!-- Grupo Error -->
-                <div class="formMessage d-none d-flex justify-content-center  w-100 bg-danger rounded" id="messageError">
-                  <p class="fs-5 pt-2"><i class="bi bi-exclamation-diamond me-1"></i> <b> Error:</b> Por  favor rellenar el formulario correctamente</p>
+                <div class="formMessage d-none d-flex ms-auto me-auto justify-content-center align-items-center  w-75 bg-danger rounded" id="messageError">
+                  <p class="fs-6 pt-3 text-light"><i class="bi bi-exclamation-diamond me-1"></i>  Por  favor rellenar el formulario correctamente</p>
                 </div>
               </div>
             
               <div
-                class="d-flex justify-content-center align-items-center my-5"
+                class="d-flex flex-column justify-content-center align-items-center my-4 "
               >
-              <button class="learn-more" type="submit">Continuar</button>
-               <p id="formSent" class="d-none"> Formulario enviado!</p>
+              <button class="learn-more  " type="submit">Continuar</button>
+               <p id="formSend" class="mt-5 d-none text-success "> ¡Registrado exitosamente!</p>
               </div>
 
 
-              <p class="warnings d-none m-auto w-auto  text-center text-success fw-semibold" >Registrado exitosamente!</p>
             </form>
   
           </div>
