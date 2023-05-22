@@ -53,19 +53,22 @@
   <body>
     <header></header>
     <main>
-      <section id="sectionForm" class="container-fluid">
-        <div class=" ">
-          <button class="btn btn-light rounded-circle" href="../index.html">
-            <i class="bi bi-arrow-left"></i>
+      <section id="sectionForm" class="container-fluid d-flex row justify-content-center align-items-center p-lg-5">
+        <div class="   ms-5 my-2">
+          <button class="btn btn-light rounded-circle icon-link icon-link-hover"onclick="window.location.href='../index.html'" type="button">
+            
+              <i class="bi bi-arrow-left mb-1 "></i>
+    
+          
           </button>
         </div>
         <div
-          class="d-flex row justify-content-center align-items-center h-100 mx-5 px-5"
+          class="d-flex content row justify-content-center align-items-center  mb-lg-5   "
         >
           <div
-            class="form content-container col ms-3 rounded-start text-center"
+            class="form content-container col  text-center"
           >
-            <div class="mt-5 pt-5">
+            <div class="mt-5 pt-5 d-none d-sm-block">
               <div
                 class="text-line text-uppercase d-flex justify-content-center align-items-center"
                 id="p1"
@@ -100,26 +103,27 @@
                 <span>!</span>
               </div>
             </div>
-            <div class="m-5 p-5 text-light">
-              <h2 class="mb-4 fs-4 fw-medium">Ya estas registrad@?</h2>
-              <button type="button" class="btn-lg btn-send">
+            <div class="my-5  m-lg-5 p-lg-5 text-light">
+              <h2 class="mb-4  fs-4 fw-medium">Ya estas registrad@?</h2>
+              <button type="button" class="btn-lg btn-send text-uppercase">
                 Inicia Sesión
               </button>
             </div>
           </div>
-          <div class="form col me-3  rounded-end">
-            <div class="d-grid gap-2 d-md-block text-center my-4">
-              <h1 class="fw-bold mb-4">Registrate</h1>
-              <div>
+          <!-- Formulario -->
+          <div class="form col   ">
+            <div class="d-flex row justify-content-center align-items-center text-center my-4">
+              <h1 class="fw-bold mb-4">Regístrate</h1>
+              <div class=" d-lg-flex justify-content-lg-center px-lg-5 d-flex justify-content-center ">
                 <input
                   type="radio"
-                  class="btn-check"
+                  class="btn-check "
                   name="options-outlined"
                   id="success-outlined"
                   autocomplete="off"
                   checked
                 />
-                <label class="btn btn-outline-info fs-5" for="success-outlined">
+                <label class="btn btn-outline-info fs-6  mx-lg-2 ms-4" for="success-outlined">
                   Como cliente</label
                 >
 
@@ -130,17 +134,17 @@
                   id="danger-outlined"
                   autocomplete="off"
                 />
-                <label class="btn btn-outline-info fs-5" for="danger-outlined">
+                <label class="btn btn-outline-info fs-6   mx-lg-2 ms-1" for="danger-outlined">
                   Como cuidador</label
                 >
               </div>
             </div>
 
             <form action="" class="mt-4" id="form">
-              <div class="row px-5">
+              <div class="row px-lg-5 ps-3  ">
 <!-- 
                 Grupo nombre -->
-                <div class="form-floating    mb-3 col-6" id="formName">
+                <div class="form-floating   mb-3 col-6" id="formName">
                   <input
                     type="text"
                      name="name"
@@ -150,11 +154,11 @@
                     placeholder="name@example.com"
                   />
               
-                  <label for="floatingFirtsName">Nombre</label>
+                  <label for="floatingFirtsName" class="ps-4">Nombre</label>
              
                   <div class="boxInteractive d-none position-relative " id="formGroupName" >
                     <i class="   bi bi-emoji-frown position-absolute"></i>
-                    <p class="formInputError  "> El nombre solo puede contener letras y guion bajo.</p>
+                    <p class="formInputError  fw-light"> Tiene que tener mas de 3 digitos.</p>
                   </div>
                  
                 </div>
@@ -169,16 +173,16 @@
                     id="floatingLastName"
                     placeholder="Password"
                   />
-                  <label for="floatingLastName">Apellido</label>
+                  <label for="floatingLastName" class="ps-4">Apellido</label>
                   <div class=" boxInteractive d-none position-relative" id="formGroupLastName" >
                     <i class=" bi bi-emoji-frown position-absolute"></i>
-                    <p class="formInputError"> El apellido tiene que ser de 4 a 6 digitos y no puede contener numeros o guiones de ningún tipo.</p>
+                    <p class="formInputError"> No puede contener numeros o guiones.</p>
                   </div>
                  
                 </div>
               </div>
 
-              <div class="col px-5">
+              <div class="col px-lg-5 ps-3">
                 <!-- Grupo Email -->
                 <div class="form-floating mb-3" id="formEmail">
                   <input
@@ -209,7 +213,7 @@
                   <label for="floatingPhone">Teléfono</label>
                    <div class="boxInteractive d-none position-relative" id="formGroupPhone" >
                     <i class="bi bi-emoji-frown position-absolute"></i>
-                  <p class="formInputError"> El telefono solo puede contener números y el maximo de 11 digitos</p>
+                  <p class="formInputError"> El teléfono tiene un  maximo de 11 digitos</p>
                   </div>
                   
                 </div>
@@ -251,10 +255,10 @@
                 <div class="form-check form-switch mb-3" >
                 
                   <label class="form-check-label" for="flexSwitchCheckDefault"
-                    >He leído y acepto los <a>términos y condiciones </a> de
+                    >He leído y acepto los <a href="#">términos y condiciones </a> de
                     uso 
                     <input
-                    class="form-check-input"
+                    class="form-check-input "
                     type="checkbox"
                     role="switch"
                     id="flexSwitchCheckDefault"
@@ -263,15 +267,15 @@
                 </div>
                 <!-- Grupo Error -->
                 <div class="formMessage d-none d-flex ms-auto me-auto justify-content-center align-items-center  w-75 bg-danger rounded" id="messageError">
-                  <p class="fs-6 pt-3 text-light"><i class="bi bi-exclamation-diamond me-1"></i>  Por  favor rellenar el formulario correctamente</p>
+                  <p class="fs-6  ps-3 pt-3 text-light"><i class="bi bi-exclamation-diamond me-1"></i>  Por  favor rellenar el formulario correctamente</p>
                 </div>
               </div>
             
               <div
-                class="d-flex flex-column justify-content-center align-items-center my-4 "
+                class="d-flex flex-column justify-content-center align-items-center my-lg-4 mt-5 pt-3"
               >
-              <button class="learn-more  " type="submit">Continuar</button>
-               <p id="formSend" class="mt-5 d-none text-success "> ¡Registrado exitosamente!</p>
+              <button class="learn-more   " type="submit">Continuar</button>
+               <p id="formSend" class="mt-5  d-none text-success "> ¡Registrado exitosamente!</p>
               </div>
 
 
@@ -307,7 +311,7 @@
 
             <div class="mt-1">
               <h5 class="mt-0 fw-bold">Llámanos</h5>
-              <p class="text-secondary">1138326832</p>
+              <p class="text-secondary">1184336432</p>
             </div>
           </div>
           <div class="d-flex position-relative col-lg-4 col-xs-12">

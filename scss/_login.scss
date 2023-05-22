@@ -1,85 +1,4 @@
-// @media (max-width: 768px) {
-//   /**  LOGIN.HTML  **/
 
-//   .container .form {
-//     margin: 11rem 0 5rem 0;
-//     overflow: hidden;
-//     background-color: #00000034;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100%;
-//     height: 100%;
-//     box-shadow: 1rem 1rem 2rem rgb(12, 14, 17);
-//     border-radius: 1rem;
-//     .tab-group {
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       background-color: #1ab188;
-//       margin: 2rem 1rem 1rem 1rem;
-
-//       width: 30%;
-//       height: 3rem;
-//       list-style-type: none;
-//       .tab {
-//         font-size: x-large;
-//         font-weight: 800;
-//         color: white;
-//       }
-//     }
-//     h1 {
-//       text-align: center;
-//       color: white;
-//       margin: 1rem 3rem;
-//     }
-//     .top-row {
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: space-between;
-//       width: 100%;
-//       .field-wrap {
-//         margin: 1rem 2rem;
-//         padding: 0 2rem;
-//       }
-//     }
-//     .top-col {
-//       display: flex;
-//       flex-direction: column;
-//       margin: 0;
-//       label {
-//         color: white;
-//       }
-//       .input {
-//         width: 100%;
-//       }
-//     }
-//     .box-botton {
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: center;
-//       align-items: center;
-//       width: 100%;
-//       height: 100%;
-//       margin: 2rem 0;
-//       .button {
-//         border: 0;
-//         padding: 15px 0;
-//         font-size: 2rem;
-//         font-weight: 600;
-//         text-transform: uppercase;
-//         letter-spacing: 0.1em;
-//         background-color: #1ab188;
-//         color: white;
-//         width: 70%;
-//         &hover {
-//           opacity: 0.8;
-//         }
-//       }
-//     }
-//   }
-// }
 
 @font-face {
   font-family: Oddval Variable;
@@ -88,18 +7,22 @@
 
 /** DESK **/
 
-@media (min-width: 768px) {
   /**  LOGIN.HTML  **/
 #sectionForm{
-  height: 100vh;
- 
+  height: max-content;
+  
+}
+.content{
+  width: 1500px;
+  height: max-content;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0,.5), -10px 15px 20px rgba(0, 0, 0,.5);
+ padding: 0;
 }
   .form  {
-   width: max-content;
-   height: 80%;
-   
+   height: 800px;
+   max-height: 1000px;
    background: rgba(white, $alpha: 1);
-    box-shadow: 10px 15px 15px rgba(0, 0, 0,.5);
+
    
   }
 
@@ -160,8 +83,8 @@
   background-image: url(../img/blob-scene-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: -10px 15px 15px rgba(0, 0, 0,.5);
-
+   height: 800px;
+   width: max-content;
 
 
 
@@ -290,4 +213,28 @@ button {
     }
   }
 }
+
+
+
+
+@media (max-width: 768px) {
+  /**  LOGIN.HTML  **/
+  #sectionForm{
+  padding: 0;
+    
+  }
+ .content{
+  width: max-content;
+  height: max-content;
+  box-shadow: none;
+
+ }
+  .form:nth-child(1){
+    background-position: center;
+  width: 100%;
+    height:200px;
+   
+  }
+
+
 }
