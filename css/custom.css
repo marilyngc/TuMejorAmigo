@@ -12324,6 +12324,9 @@ section:nth-child(4) {
   background: white;
 }
 
+.form-control {
+  border-color: rgba(130, 122, 182, 0.6901960784);
+}
 .form-control:focus {
   border: 1px solid #827AB6;
   box-shadow: 1px 0px 10px #827AB6;

@@ -25,12 +25,15 @@
 
    
   }
-
-  .form-control:focus{
-    border:1px solid $colorBtn;
-    box-shadow: 1px 0px 10px $colorBtn;
- 
+  .form-control{
+    border-color:#827ab6b0;
+    &:focus{
+      border:1px solid $colorBtn;
+      box-shadow: 1px 0px 10px $colorBtn;
+   
+    }
   }
+
 
 
 

@@ -7,7 +7,8 @@ const expresiones = {
 	lastName: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	phone: /^\d{7,14}$/ // 7 a 14 numeros.
+	phone: /^\d{7,14}$/, // 7 a 14 numeros.
+  dni: /^\d{7,8}$/ // 7 a 8 numeros.
 }
 
 const fields = {
@@ -15,8 +16,8 @@ const fields = {
   lastName : false,
   email : false,
   phone : false,
-  password : false
-
+  password : false,
+  dni: false
  
 }
 
@@ -35,6 +36,9 @@ const validateForm = (e) => {
     break;
     case "phone":
       validateField(expresiones.phone,e.target,"Phone");
+    break;
+    case "dni":
+      validateField(expresiones.dni,e.target,"Dni");
     break;
     case "password":
       validateField(expresiones.password,e.target,"Password");
@@ -65,7 +69,9 @@ const validateField = (expression,input,field) => {
     fields["lastName"] = true;
     fields["email"] = true;
     fields["phone"] = true;
+    fields["dni"] = true;
     fields["password"] = true;
+
    
     
 
@@ -87,6 +93,7 @@ const validateField = (expression,input,field) => {
     fields["lastName"] = false;
     fields["email"] = false;
     fields["phone"] = false;
+    fields["dni"] = false;
     fields["password"] = false;
    
     
@@ -133,7 +140,7 @@ form.addEventListener("submit", (e) => {
 
  const terms = document.getElementById("flexSwitchCheckDefault");
 
- if (fields.name && fields.lastName && fields.email && fields.phone && fields.password && terms.checked ) {
+ if (fields.name && fields.lastName && fields.email && fields.phone && fields.dni && fields.password && terms.checked ) {
   form.reset();
 
 

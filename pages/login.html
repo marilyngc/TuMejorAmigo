@@ -149,7 +149,7 @@
                     type="text"
                      name="name"
                     autocomplete="off"
-                    class="form-control   "
+                    class="form-control  "
                     id="floatingFirtsName"
                     placeholder="name@example.com"
                   />
@@ -169,7 +169,7 @@
                     type="text"
                     name="lastName"
                     autocomplete="off"
-                    class="form-control"
+                    class="form-control "
                     id="floatingLastName"
                     placeholder="Password"
                   />
@@ -189,7 +189,7 @@
                     type="email"
                     name="email"
                     autocomplete="off"
-                    class="form-control"
+                    class="form-control "
                     id="floatingInput"
                     placeholder="name@example.com"
                   />
@@ -206,7 +206,7 @@
                     type="tel"
                     name="phone"
                     autocomplete="off"
-                    class="form-control"
+                    class="form-control "
                     id="floatingPhone"
                     placeholder="Phone"
                   />
@@ -217,13 +217,30 @@
                   </div>
                   
                 </div>
+                <!-- DNI -->
+                <div class="form-floating mb-3" id="formDni">
+                  <input
+                    type="number"
+                    name="dni"
+                    autocomplete="off"
+                    class="form-control "
+                    id="floatingDni"
+                    placeholder="Dni"
+                  />
+                  <label for="floatingDni">Documento de identidad</label>
+                   <div class="boxInteractive d-none position-relative" id="formGroupDni" >
+                    <i class="bi bi-emoji-frown position-absolute"></i>
+                  <p class="formInputError"> El Dni tiene un  maximo de 8 digitos</p>
+                  </div>
+                  
+                </div>
                 <!-- Grupo contraseña -->
                 <div class="form-floating mb-3" id="formPassword"  >
                   <input
                     type="password"
                     name="password"
                     autocomplete="off"
-                    class="form-control"
+                    class="form-control "
                     id="floatingPassword"
                     placeholder="Password"
                   />
