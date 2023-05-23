@@ -12309,6 +12309,8 @@ section:nth-child(4) {
 /**  LOGIN.HTML  **/
 #sectionForm {
   height: max-content;
+  padding: 0;
+  margin: 0;
 }
 
 .content {
@@ -12587,7 +12589,7 @@ button.learn-more:active::before {
 @media (max-width: 768px) {
   /**  LOGIN.HTML  **/
   #sectionForm {
-    padding: 0;
+    width: 100%;
     height: max-content;
   }
   .content {
