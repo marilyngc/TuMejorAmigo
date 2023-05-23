@@ -12312,15 +12312,32 @@ section:nth-child(4) {
 }
 
 .content {
+  position: relative;
   width: 1500px;
   height: max-content;
   box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.5), -10px 15px 20px rgba(0, 0, 0, 0.5);
   padding: 0;
 }
 
+.arrow {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.arrow button {
+  background-color: transparent;
+  border: #827AB6 groove;
+}
+.arrow button:hover {
+  background-color: transparent;
+  border: white groove;
+}
+.arrow button i {
+  color: white;
+}
+
 .form {
-  height: 800px;
-  max-height: 1000px;
+  height: 900px;
   background: white;
 }
 
@@ -12357,8 +12374,7 @@ section:nth-child(4) {
   background-image: url(../img/blob-scene-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
-  width: max-content;
+  height: 900px;
 }
 .form:nth-child(1) .content-container {
   position: absolute;
@@ -12572,16 +12588,19 @@ button.learn-more:active::before {
   /**  LOGIN.HTML  **/
   #sectionForm {
     padding: 0;
+    height: max-content;
   }
   .content {
-    width: max-content;
-    height: max-content;
+    width: 100%;
     box-shadow: none;
   }
   .form:nth-child(1) {
     background-position: center;
     width: 100%;
-    height: 200px;
+    height: 250px;
+  }
+  .form:nth-child(2) {
+    height: 100%;
   }
 }
 
