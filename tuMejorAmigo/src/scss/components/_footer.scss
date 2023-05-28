@@ -1,0 +1,31 @@
+.btn-outline-info {
+    @include button-outline-variant(
+      $colorBtn,
+      $color-hover: color-contrast($backgroundColor),
+      $active-background: $colorBtn,
+      $active-border: $colorBtn,
+      $active-color: color-contrast($backgroundColor)
+    );
+  }
+  
+  .footerRedes{
+    background-color: $colorTuMejorAmigo;
+    
+  }
+  
+  .footerLinks ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    height: 5px;
+    width: 50px;
+    background: #2b14ff;
+  }
+  ul li a{
+    color: black;
+  &:hover{
+    color: rgb(164, 100, 237);
+    
+    }
+  }

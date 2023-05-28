@@ -1,6 +1,6 @@
 
 
-import { CartWidget } from "../CartWidget/CartWidget"
+
 import {ListGroup } from "react-bootstrap";
 
 const link = ["Ser cuidador", "Registrarme"];
@@ -16,7 +16,7 @@ export const NavLink=  () => {
    <ListGroup className='nav-link' key={index}> {text}</ListGroup>
 ))}
    
-    <CartWidget/>
+    
      
     
     </ListGroup>

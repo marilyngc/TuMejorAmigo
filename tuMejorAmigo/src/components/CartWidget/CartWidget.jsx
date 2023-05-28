@@ -12,7 +12,7 @@ export const CartWidget = () => {
      
 
     
-    <ListGroup className='nav-link d-block ' >   <BsCart2/> 0 </ListGroup>
+    <ListGroup className='nav-link-cart d-block p-1  me-2 ' >   <BsCart2 className="fs-4"/> 0 </ListGroup>
 
     
     

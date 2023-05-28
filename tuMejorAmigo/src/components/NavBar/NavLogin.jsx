@@ -1,4 +1,4 @@
-
+import {Button} from "react-bootstrap"
 export const NavLogin = ({textLogin}) => {
     return(
         <span
@@ -15,6 +15,8 @@ export const NavLogin = ({textLogin}) => {
           </svg>
           
          {textLogin}
+        
         </span>
+       
     )
 }

@@ -3,14 +3,14 @@
 
   
 // UI Variables
-
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import './components/base/variables';
 
 // Components
 
 @import './components/global';
-// @import './components/mixin';
+ @import './components/mixin';
 @import './components/navBar';
 //@import './components/itemListContainer';
-//@import './components/footer';
+@import './components/footer';
 

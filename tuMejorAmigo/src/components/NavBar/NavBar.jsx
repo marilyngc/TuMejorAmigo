@@ -1,4 +1,4 @@
-
+import { CartWidget } from "../CartWidget/CartWidget";
 import { NavLink } from "./NavLink"
 import { NavLogin } from "./NavLogin"
 import { NavLogo } from "./NavLogo"
@@ -89,7 +89,7 @@ export function NavBar() {
                 </Nav>
                 <Form className="d-flex pt-2 ">
                 <NavLogin  textLogin={ " Iniciar Sesión"} />
-           
+           <CartWidget/>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

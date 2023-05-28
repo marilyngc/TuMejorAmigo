@@ -1,13 +1,16 @@
 {
+  "homepage":"https://yourusername.github.io/repository-name",
   "name": "form",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/TuMejorAmigo/",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
@@ -25,6 +28,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^5.0.0",
     "sass": "^1.62.1",
     "vite": "^4.3.2"
   }
