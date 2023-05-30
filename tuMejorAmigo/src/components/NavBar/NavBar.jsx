@@ -1,7 +1,7 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import { NavLink } from "./NavLink"
 import { NavLogin } from "./NavLogin"
-import { NavLogo } from "./NavLogo"
+import { Logo } from "../../../public/Logo/Logo";
 import {Container, Form, Nav, Navbar,Offcanvas} from "react-bootstrap";
 
 
@@ -70,7 +70,7 @@ export function NavBar() {
       {[  'xxl'].map((expand) => (
         <Navbar key={expand}  expand={expand} className="mb-3  px-3 shadow">
           <Container fluid>
-            <Navbar.Brand href="#">    <NavLogo/></Navbar.Brand>
+            <Navbar.Brand href="#">   <Logo/> </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -79,7 +79,7 @@ export function NavBar() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                <NavLogo/>
+                <Logo/>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

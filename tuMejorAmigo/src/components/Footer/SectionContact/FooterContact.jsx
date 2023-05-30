@@ -1,5 +1,5 @@
 import { Card,Figure } from "react-bootstrap";
-import { Contacts } from "./Data";
+import { Contacts } from "../Data";
 import { Fragment } from 'react';
 
 export const FooterContact = () => {
@@ -11,7 +11,7 @@ export const FooterContact = () => {
     <Fragment >
     {item.icon}
     </Fragment>
-    <div  className="ms-3 py-1">
+    <div  className="ms-lg-3 mb-4 mb-lg-0 py-1 ">
          <Card.Title className="mt-0 fw-bold pb-1">{item.subtitle}</Card.Title>
           <Card.Text className="text-secondary">{item.paragraph}</Card.Text>
    
