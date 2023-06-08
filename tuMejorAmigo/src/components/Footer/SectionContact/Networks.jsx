@@ -9,7 +9,7 @@ export  const Networks = () => {
           Nuestras Redes
         </h5>
         <div className="container__icons col-xs-12 col-md-6 col-lg-3 w-auto">
-            <ListNetworks/>
+            <ListNetworks />
          
         </div>
       </div>

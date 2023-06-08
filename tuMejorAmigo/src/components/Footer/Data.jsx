@@ -43,8 +43,10 @@ export const Links = [
 ];
 
 export const Networks = [
-  <BsInstagram />,
-  <BsTwitter />,
-  <BsYoutube />,
-  <BsLinkedin />,
+{id: 1, icon: <BsInstagram />,},
+{id: 2, icon:<BsTwitter />},
+{id: 3, icon:  <BsYoutube />},
+{id: 4, icon:   <BsLinkedin />}
+ 
+
 ];
