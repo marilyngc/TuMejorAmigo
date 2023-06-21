@@ -2,13 +2,22 @@
 
 .shop-card {
     
-    width: 350px;
+    //width: 350px;
     background: #f5f5f5;
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
     overflow: hidden;
     border-radius: 5px;
-    padding: 25px;
+   
     text-align: center;
     z-index: 2;
     border: none;
+}
+
+.imgHidden{
+ 
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+
+    
 }
