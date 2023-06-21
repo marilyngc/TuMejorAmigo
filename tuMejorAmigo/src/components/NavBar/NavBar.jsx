@@ -3,7 +3,7 @@ import { NavLink } from "./NavLink"
 import { NavLogin } from "./NavLogin"
 import { Logo } from "../../../public/Logo/Logo";
 import {Container, Form, Nav, Navbar,Offcanvas} from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -63,14 +63,15 @@ import {Container, Form, Nav, Navbar,Offcanvas} from "react-bootstrap";
 
 
 
-export function NavBar() {
+export function NavBar({variant = false}) {
   return (
     <>
    
       {[  'xxl'].map((expand) => (
-        <Navbar key={expand}  expand={expand} className="mb-3  px-3 shadow">
+        <Navbar key={expand}  expand={expand} className={variant  ? "d-none" : "mb-3  px-3 shadow"}>
           <Container fluid>
-            <Navbar.Brand href="#">   <Logo/> </Navbar.Brand>
+            <Link to="/inicio">   <Logo /> </Link>
+ 
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

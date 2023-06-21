@@ -1,17 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "react-bootstrap";
+import { useFetch } from "../hooks/useFetch";
     
 export const PokemonApi = () => {
-  const [pokemon, setPokemon] = useState(null);
+ 
   const [id, setId] = useState(1);
-
-  useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-      .then((resp) => resp.json()) // es asincronico y retornar otra respuesta
-      .then((data) => {
-        setPokemon(data);
-      });
-  }, [id]);
+  const {data: pokemon} = useFetch(`https://pokeapi.co/api/v2/pokemon/${id}`, [id])
+ 
   const handleSiguiente = () => id < 300 && setId(id + 1);
   const handleAnterior = () => id > 1 && setId(id - 1);
   return (

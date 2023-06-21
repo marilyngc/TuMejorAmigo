@@ -1,0 +1,292 @@
+section {
+    background-color: $colorTuMejorAmigo;
+    height: 90vh;
+   
+  }
+  
+  section:nth-child(even){
+  background-color: white;
+  }
+  #section1 {
+    margin-top: 4rem;
+   background-color: white;
+    
+    .position-relative-make {
+      //position: relative;
+      
+      width: 100%;
+      height: 70%;
+      background-image: url(../img/index/vista-frontal-hermoso-perro-espacio-copia.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+    .position {
+      position: absolute;
+      top: 15%;
+      left: 60%;
+      width: 50vh;
+      padding: 20px;
+      height: max-content;
+      border-radius: 30px;
+      background-color: white;
+  
+      .font-h1 {
+        letter-spacing: -0.05em;
+        font-family: $tittleH1;
+        color: $colorTuMejorAmigo;
+      }
+    }
+    .box-info {
+      background-color: $colorTuMejorAmigo;
+      position: absolute;
+      top: 55%;
+      width: 1100px;
+      border-radius: 30px;
+      padding: 20px;
+  
+      box-shadow: 0.01rem 0.25rem 7.2px #818dad;
+      h2 {
+        padding: 20px;
+        font-weight: bold;
+      }
+      .btn-service {
+        padding: 1.5rem 5rem 1.5rem 1rem;
+        letter-spacing: 1px;
+        font-weight:100;
+       &:active{
+        border: 4px solid $colorBtn;
+     
+       }
+      }
+    }
+    
+  
+    .btn-outline-white {
+      @include button-outline-variant(
+        $colorLight,
+        $color-hover: color-contrast($backgroundColor),
+        $active-background: #e6e4ee56,
+        $active-border: $colorLight,
+        $active-color: color-contrast($backgroundColor)
+      );
+      padding: 20px;
+      margin: 5px;
+    }
+  }
+  
+  
+  
+  .numbersProgress{
+    color: white;
+    font-size: 20px;
+  }
+  .cardInfo{
+    border: none;
+    background-color: transparent;
+  }
+  
+  .font-uppercase {
+    font-weight: 700;
+  }
+  
+  section:nth-child(2) {
+    height: 60vh;
+  
+  }
+  
+  section:nth-child(3) {
+  
+    position: relative;
+    .imgSticker{
+      width: 300px;
+      position: absolute;
+      top: -260px;
+    }
+  }
+  
+  section:nth-child(4){
+    height: max-content;
+  }
+  // SECTION 4
+  
+  
+  
+    .cardDog{
+      width: 400px;
+      margin: 30px;
+      transition: all 300ms;
+    background-color: transparent;
+  border: none;
+    }
+  
+  .cardDog:hover{
+   width: 415px;
+  }
+  
+  .card .cover{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+  
+    
+  }
+  
+  .card .cover img{
+  width:30%;
+  
+  
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+  object-fit: cover;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+  }
+  
+  .card:hover .cover img{
+    top: 0px;
+    filter: none;
+  }
+  
+  .card .img-back{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+  bottom: -60px;
+    left: 0;
+  
+    border-radius: 20px;
+    transition: all 300ms;
+  
+  
+  }
+  
+  
+  
+  
+  .card:hover .img-back{
+    bottom: -50px;
+  }
+  
+  
+  .colorText:nth-child(1){
+    color:$colorCelest;
+  }
+  .colorText:nth-child(2){
+    color: $colorViolet;
+  }
+  .colorText:nth-child(3){
+    color: $colorYellow;
+  }
+  
+  
+  .loginInverse{
+    position: relative;
+    display:inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    overflow: hidden;
+    
+    letter-spacing: 4px;
+    transition: all 1.5s ease-out;
+    &:hover{
+      color: white;
+      font-size: 13px;
+    }
+  }
+  
+  .loginInverse svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+  }
+  
+  .loginInverse rect{
+    width: 100%;
+    height: 100%;
+    stroke: white;
+    stroke-width: 4px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 600;
+    transition: .6s ease all;
+  }
+  
+  .loginInverse:hover rect{
+    stroke-dashoffset: -1000;
+  }
+  
+  
+  
+  
+  
+  // ///// MOBILE ///
+  @media (max-width: 768px) {
+  
+    // SECTION 1
+  #section1 {
+    position: relative;
+    height: 220vh;
+  
+    .position-relative-make {
+      position: absolute;
+      top: 8rem;
+      background-image: url(../img/index/lindo-perrito-haciendose-pasar-persona-negocios.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 50%;
+    }
+  
+    .position {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      margin: auto;
+      width: auto;
+      border-radius: 0;
+  
+      .font-h1 {
+        letter-spacing: -0.05em;
+        font-family: $tittleH1;
+        color: $colorTuMejorAmigo;
+        font-size: 2rem;
+      }
+    }
+  
+    .box-info {
+      border-radius: 0;
+  
+      .btn-service {
+        padding-right: 2rem;
+      }
+    }
+  }
+  section:nth-child(2) {
+   margin-top: 10px;
+   
+   
+    height: max-content;
+    
+   
+  }
+  section:nth-child(3){
+     height: max-content;
+     .imgSticker{
+      width: 150px;
+      position: absolute;
+      top: -130px;
+    }
+  }
+  section:nth-child(4){
+    height: max-content;
+  }
+  }

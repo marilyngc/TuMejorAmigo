@@ -1,20 +1,36 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import  './scss/styles.scss'
-import './App.css'
-import {  NavBar } from './components/NavBar/NavBar';
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
-import { Footer } from "./components/Footer/Footer"
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./scss/styles.scss";
+import "./App.css";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+import { NavBar } from "./components/NavBar/NavBar";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { Footer } from "./components/Footer/Footer";
+import { Inicio } from "./components/Inicio/Inicio";
+import { Registrarme } from "./components/Registrarme/Registrarme";
+import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 function App() {
+  return (
+    <BrowserRouter>
   
 
-  return (
-    <>
-   <NavBar />
-<ItemListContainer  greeting = {"Ecommerce"}/>
-    <Footer/>
-    </>
-  )
+      <Routes>
+        <Route path="/registrarme" element={<NavBar variant/>}/>
+        <Route path="*" element={<NavBar/>}/>
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/registrarme" element={<Registrarme />} />
+        <Route path="/catalogo" element={<ItemListContainer />} />
+        <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
+        <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
+        <Route path="*" element={<Navigate to={"/"}/>}/>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

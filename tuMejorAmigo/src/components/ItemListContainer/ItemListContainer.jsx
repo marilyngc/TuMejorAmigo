@@ -1,67 +1,45 @@
+import { ItemList } from "./ItemList/ItemList";
 
-import { useState,useEffect } from "react"
-import { pedirDatos } from "../../HELPERS/pedirDatos"
-import { ItemList } from "./ItemList/ItemList"
-import { PokemonApi } from "../../api/PokemonApi"
-
+import { useProducts } from "../../hooks/useProducts";
+import { Link } from "react-router-dom";
+import { Nav } from "react-bootstrap";
+import { RiHandSanitizerLine } from "react-icons/ri";
+import { BsUniversalAccess} from "react-icons/bs";
+import { TbHorseToy} from "react-icons/tb";
+import { IoFastFoodOutline } from "react-icons/io5";
+import { MdOutlineMedicalServices } from "react-icons/md";
 
 
 export const ItemListContainer = () => {
-//  const [counter, setCounter] = useState (init)
-//  const [saludar, setSaludar] = useState(false)
- const [product, setProduct] = useState([]) // Iniciamos vacio
+  const { products } = useProducts();
 
-    
- useEffect(() => {
-     pedirDatos
-     .then((res) =>{
-       setProduct(res)
-     })
-     .catch((error) => {
-         console.log(error)
-     })
+  
 
-}, []) // El array vacio es el montage para que no se renderise
+  return (
+    <div className="container mt-5">
+      <Nav className="justify-content-center" activeKey="/catalogo">
+        <Nav.Item className="me-4 ">
+          <Link to="/catalogo" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none"> Todos</Link>
+        </Nav.Item>
+        <Nav.Item className="me-4 ">
+          <Link to="/catalogo/higiene" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Higiene</Link>
+        </Nav.Item>
+        <Nav.Item className="me-4 ">
+          <Link to="/catalogo/accesorios" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Accesorios</Link>
+        </Nav.Item>
 
-// // GET => alumnos | id: number
-// // query params
-// const url = "https://api.coderhouse.com/alumnos?id=25"; // pido el id del usuario
-// const url2 = "https://api.coderhouse.com/alumnos?id=25&comision=43225"; // para solicitar dos  cosas
+        <Nav.Item className="me-4 ">
+          <Link to="/catalogo/juguetes" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Juguetes </Link>
+        </Nav.Item>
+        <Nav.Item className="me-4 ">
+          <Link to="/catalogo/alimento" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Alimento</Link>
+        </Nav.Item>
+        <Nav.Item className="me-4 ">
+          <Link to="/catalogo/medicina" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Medicina</Link>
+        </Nav.Item>
+      </Nav>
 
-// // GET  => cursos
-// const url3 = "https://api.coderhouse.com/alumnos?{id}"; 
-
-
-////////////////////////////////////////////
-//  const sumar = () =>{
-//       setCounter(counter + step)
-//  }
-//  const restar = () =>{
-//       setCounter(counter - step)
-//  }
-//  const reset = () =>{
-//       setCounter(init)
-//  }
-
-//  const cambiar = () => {
-//      setSaludar(!saludar)
-//  }
-
-
-    return(
-
-        <div className="container">
-          {/* <button onClick = {sumar}>Sumar</button>
-          <button onClick = {restar}>Restar</button>
-          <button onClick = {reset}>Reset</button>
-          <p>{counter}</p>
-
-          <hr />
-
-          <button onClick={cambiar}> Click me</button>
-          <p>{saludar ? "Hola mundo" : "Chau mundo"}</p> */}
-<PokemonApi/>
-   <ItemList items={product}/>
-        </div>
-    )
-}
+      <ItemList items={products} />
+    </div>
+  );
+};
