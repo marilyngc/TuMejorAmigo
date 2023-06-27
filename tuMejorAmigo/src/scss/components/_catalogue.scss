@@ -1,5 +1,52 @@
+#sectionCatalogue{
+    background-color: transparent;
+}
+
+.positionText{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+}
+h1 {
+    display: inline-block;
+    color: white;
+    font-family: $font-family-catalogue;
+    font-size: 8em; 
+    text-shadow: .03em .03em 0 #d4cc52;
+   
+    }
+    h1:after {
+      content: attr(data-shadow);
+      position: absolute;
+      top: .2em; left: .2em;
+      z-index: -1;
+      text-shadow: none;
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 2%,
+          rgb(255, 255, 255) 45%,
+          rgb(253, 249, 255) 55%,
+          transparent 0
+          );
+      background-size: .05em .05em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+      animation: shad-anim 15s linear infinite;
+      }
+  
+  @keyframes shad-anim {
+    0% {background-position: 0 0}
+    0% {background-position: 100% -100%}
+    }
 
 
+  
+  
+ 
+  
+ 
 .shop-card {
     
     //width: 350px;
@@ -7,8 +54,8 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
     overflow: hidden;
     border-radius: 5px;
-   
-    text-align: center;
+   padding: 0;
+    //text-align: center;
     z-index: 2;
     border: none;
 }
@@ -17,7 +64,19 @@
  
     height: 150px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 9px;
 
     
 }
+
+.btnCard{
+    color: #fff;
+background-color:black;
+   font-size: 1rem;
+    font-weight: 600;
+    padding: 0.625rem 5rem;
+    border-radius: 0;
+
+}
+
+

@@ -1,5 +1,5 @@
 import { ItemList } from "./ItemList/ItemList";
-
+import {ItemFrontPage} from "./ItemFrontPage";
 import { useProducts } from "../../hooks/useProducts";
 import { Link } from "react-router-dom";
 import { Nav } from "react-bootstrap";
@@ -16,26 +16,27 @@ export const ItemListContainer = () => {
   
 
   return (
-    <div className="container-fluid p-0 mt-5 pt-2">
-      <Nav className="justify-content-center" activeKey="/catalogo">
-        <Nav.Item className="me-4 ">
-          <Link to="/catalogo" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none"> Todos</Link>
+    <div className="container-fluid p-0  ">
+      <ItemFrontPage/>
+      <Nav className="justify-content-center mt-4 py-4 " activeKey="/catalogo">
+        <Nav.Item className="me-4  ">
+          <Link to="/catalogo" className=" link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none"> Todos</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/higiene" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Higiene</Link>
+          <Link to="/catalogo/higiene" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <RiHandSanitizerLine className="me-1 mb-1"/> Higiene</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/accesorios" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Accesorios</Link>
+          <Link to="/catalogo/accesorios" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <BsUniversalAccess className="me-1 mb-1"/>Accesorios</Link>
         </Nav.Item>
 
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/juguetes" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Juguetes </Link>
+          <Link to="/catalogo/juguetes" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <TbHorseToy className="me-1 mb-1"/>Juguetes </Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/alimento" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Alimento</Link>
+          <Link to="/catalogo/alimento" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <IoFastFoodOutline className="me-1 mb-1"/> Alimento</Link>
         </Nav.Item>
         <Nav.Item className="me-4 ">
-          <Link to="/catalogo/medicina" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Medicina</Link>
+          <Link to="/catalogo/medicina" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-50-hover text-decoration-none "> <MdOutlineMedicalServices className="me-1 mb-1"/> Medicina</Link>
         </Nav.Item>
       </Nav>
 

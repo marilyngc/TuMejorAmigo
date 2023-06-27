@@ -68,7 +68,7 @@ export function NavBar({variant = false}) {
     <>
    
       {[  'xxl'].map((expand) => (
-        <Navbar key={expand}  expand={expand} className={variant  ? "d-none" : "mb-3  px-3 shadow"}>
+        <Navbar key={expand}  expand={expand} className={variant  ? "d-none" : "  px-3 shadow"}>
           <Container fluid>
             <Link to="/inicio">   <Logo /> </Link>
  
