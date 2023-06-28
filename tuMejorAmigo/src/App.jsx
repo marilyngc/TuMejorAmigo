@@ -10,6 +10,9 @@ import { Footer } from "./components/Footer/Footer";
 import { Inicio } from "./components/Inicio/Inicio";
 import { Registrarme } from "./components/Registrarme/Registrarme";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
+import Page404 from "./components/404/Page404"
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,8 +29,10 @@ function App() {
         <Route path="/catalogo" element={<ItemListContainer />} />
         <Route path="/catalogo/:categoryId" element={<ItemListContainer />} />
         <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-        <Route path="*" element={<Navigate to={"/"}/>}/>
+     {/*    <Route path="*" element={<Navigate to={"/"}/>}/> */}
+        <Route path="*" element={<Page404/>}/>
       </Routes>
+     
       <Footer />
     </BrowserRouter>
   );

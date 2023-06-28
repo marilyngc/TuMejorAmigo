@@ -1,7 +1,7 @@
- #sectionCatalogue {
-background-color: white;
+#sectionCatalogue {
+  background-color: white;
   //background: #e0e0e0;
-} 
+}
 
 .positionText {
   position: absolute;
@@ -45,42 +45,38 @@ h1:after {
   }
 }
 
+
+
+
 .shop-card {
- // background: #e0e0e0;
- background: transparent;
- // border: none;
- 
+  background: transparent;
+
   display: flex;
   flex-direction: column;
-  color: rgba(54,57,61,0.8);
+  color: rgba(54, 57, 61, 0.8);
   height: fit-content;
 
   padding: 12px;
   text-align: center;
-/*   box-shadow: -4px -4px 12px 2px rgba(80, 74, 74, 0.7),
-     4px 4px 12px 0 rgba(0, 0, 0, 0.15);
- */
 
-    border-radius: 12px;
+  border-radius: 12px;
   position: relative;
   transition: all 0.1s ease;
-  &:hover{
+  &:hover {
     border: 2px solid $colorBtn;
-    box-shadow: 0 2px 7px rgba(0,0,0,.16);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.16);
   }
   .title {
-
     font-weight: 500;
-     font-size: 13px;
-     font-weight: bold;
-     letter-spacing: 2px;
-     text-transform: uppercase
-   }
-   .price {
-  
-     font-size: 18px;
-       letter-spacing: 2px;
-   }
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .price {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 }
 
 .imgHidden {
@@ -97,7 +93,6 @@ h1:after {
       inset -4px -4px 8px 0 rgb(255, 255, 255),
       inset 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
   }
- 
 }
 
 .btn-outline-card {
@@ -113,7 +108,6 @@ h1:after {
   font-weight: 600;
   padding: 0.4rem 3rem;
   transition: all 0.7s ease;
-
 
   border-radius: 0.8rem;
   &::hover {

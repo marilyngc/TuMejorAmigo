@@ -70,7 +70,7 @@ export function NavBar({variant = false}) {
       {[  'xxl'].map((expand) => (
         <Navbar key={expand}  expand={expand} className={variant  ? "d-none" : "  px-3 shadow"}>
           <Container fluid>
-            <Link to="/inicio">   <Logo /> </Link>
+            <Link to="/">   <Logo /> </Link>
  
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

@@ -1,16 +1,22 @@
-
+import useMobile from "../../hooks/useMobile"
 
 export const Inicio = () => {
-
+const isMobile =  useMobile()
     return  (
         <main>
         <section
           id="section1"
           class="w-auto d-flex row justify-content-center"
         >
-            <h2>inico</h2>
+            <h2>inicio</h2>
+            <hr />
+            {
+              isMobile 
+              ? <h3>Estamos en mobile</h3>
+              : <h3>Estamos en desk</h3>
+            }
            {/* Background IMG */}
-          <div class="position-relative-make"></div>
+       {/*    <div class="position-relative-make"></div> */}
           {/* <div class="row align-items-center position">
             <h1
               class="text-opacity-50 col-12 animate__animated animate__shakeX font-h1"

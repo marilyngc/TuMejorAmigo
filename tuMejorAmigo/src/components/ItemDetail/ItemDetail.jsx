@@ -1,20 +1,15 @@
-import { useState } from "react";
+
 import { Card, Button } from "react-bootstrap";
+import ItemCount from "../ItemCount/ItemCount";
 
 export const ItemDetail = ({
   id,
   nombre,
   precio,
   categoria,
-  descripcion,
-  img,init= 0
+  descripcion,img,stock 
 }) => {
 
-        const [count, setCount] = useState(init)
-        const add = () =>  setCount(count + 1)
-        const subtract = () => { if (count > 0) {
-            setCount(count - 1)
-        } } 
 
   return (
     <Card class="card mb-3 mt-5 pt-5" style={{ width: "90rem" }}>
@@ -27,19 +22,10 @@ export const ItemDetail = ({
             <Card.Title>{nombre}</Card.Title>
             <Card.Text>{descripcion}</Card.Text>
             <Card.Text>Precio: {precio}</Card.Text>
-            <div>
-            <Button variant="outline-primary" onClick={subtract} className="btn-outline-info">
-            -
-            </Button>
-            <Button variant="" className="border mx-4 px-5">
-             {count}
-            </Button>
-            <Button variant="outline-primary" onClick={add} className="btn-outline-info">
-         +
-            </Button>
-            </div>
+          
           
           </Card.Body>
+          <ItemCount max={stock}/>
         </div>
       </div>
     </Card>
