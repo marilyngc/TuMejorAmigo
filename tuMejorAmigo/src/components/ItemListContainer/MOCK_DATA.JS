@@ -1,6 +1,6 @@
 import collar from "../../assets/products/collar.jpg";
 import mouse from "../../assets/products/juguete.jpg";
-import brush from "../../assets/products/cortaUñas.jpg";
+import brush from "../../assets/products/cortaUñas.png";
 import catFood from "../../assets/products/food.jpg";
 import toy from "../../assets/products/toy3.jpg";
 import dogFood from "../../assets/products/food2.jpg";
