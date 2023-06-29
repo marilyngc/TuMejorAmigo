@@ -1,12 +1,13 @@
-import { useState } from "react";
+
 import { Button } from "react-bootstrap";
 
 
-const ItemCount = ({ max, init = 0 }) => {
-  const [count, setCount] = useState(init);
-  const handlAdd = () => count < max && setCount(count + 1);
-  const handlSubtract = () => count > 0 && setCount(count - 1);
+const ItemCount = ({ max, counter,setCounter,handleAggregate}) => {
 
+
+  const handlAdd = () => counter < max && setCounter(counter + 1);
+  const handlSubtract = () => counter > 0 && setCounter(counter - 1);
+  
   return (
     <div>
       <Button
@@ -16,15 +17,19 @@ const ItemCount = ({ max, init = 0 }) => {
       >
         -
       </Button>
-      <Button variant="" className="border mx-4 px-5">
-        {count}
-      </Button>
+      <span variant="" className="border mx-4 px-5">
+        {counter}
+      </span>
       <Button
         variant="outline-primary"
         onClick={handlAdd}
         className="btn-outline-info"
       >
         +
+      </Button>
+      <br />
+      <Button className="btn-outline-info mt-2" onClick={handleAggregate}>
+        Agregar al carrito
       </Button>
     </div>
   );

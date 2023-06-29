@@ -24,6 +24,20 @@ export const MOCK_DATA = [
     category: "accesorios",
     img: collar,
     stock:5,
+    sizes : [
+      {
+        value: "S",
+        label: "Small"
+      },
+      {
+        value: "M",
+        label: "Medium"
+      },
+      {
+        value: "L",
+        label: "Largue"
+      }
+     ],
   },
   {
     id: 2,
@@ -106,6 +120,20 @@ export const MOCK_DATA = [
     category: "accesorios",
     img: ropa,
     stock:5,
+    sizes : [
+      {
+        value: "S",
+        label: "Small"
+      },
+      {
+        value: "M",
+        label: "Medium"
+      },
+      {
+        value: "L",
+        label: "Largue"
+      }
+     ],
   },
   {
     id: 11,
@@ -151,5 +179,19 @@ export const MOCK_DATA = [
     category: "accesorios",
     img: ropa1,
     stock:5,
+    sizes : [
+      {
+        value: "S",
+        label: "Small"
+      },
+      {
+        value: "M",
+        label: "Medium"
+      },
+      {
+        value: "L",
+        label: "Largue"
+      }
+     ],
   },
 ];

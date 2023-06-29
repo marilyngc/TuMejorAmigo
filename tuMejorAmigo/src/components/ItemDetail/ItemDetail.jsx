@@ -1,16 +1,35 @@
-
+import { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import ItemCount from "../ItemCount/ItemCount";
+import SelectSize from "../SelectSize/SelectSize";
 
 export const ItemDetail = ({
   id,
   nombre,
   precio,
   categoria,
-  descripcion,img,stock 
+  descripcion,
+  img,
+  stock,sizes,
+  init = 0,
 }) => {
+  const [count, setCount] = useState(init);
+  const [size, setSize] = useState(null);
+  const handleAggregate = () => {
+    const item = {
+      id,
+      nombre,
+      precio,
+      categoria,
+      descripcion,
+      img,
+      stock,
+      count,
+      size,
+    }; // aqui manipulamos la info en los hijos
+  };
 
-
+ 
   return (
     <Card class="card mb-3 mt-5 pt-5" style={{ width: "90rem" }}>
       <div class="row g-0">
@@ -21,11 +40,15 @@ export const ItemDetail = ({
           <Card.Body className="col">
             <Card.Title>{nombre}</Card.Title>
             <Card.Text>{descripcion}</Card.Text>
-            <Card.Text>Precio: {precio}</Card.Text>
-          
-          
+            <Card.Text> ${precio}</Card.Text>
           </Card.Body>
-          <ItemCount max={stock}/>
+          <SelectSize setSize={setSize} options={sizes}/>
+          <ItemCount
+            max={stock}
+            counter={count}
+            setCounter={setCount}
+            handleAggregate={handleAggregate}
+          />
         </div>
       </div>
     </Card>
