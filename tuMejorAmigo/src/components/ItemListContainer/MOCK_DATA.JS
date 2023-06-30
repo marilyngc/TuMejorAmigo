@@ -47,6 +47,20 @@ export const MOCK_DATA = [
     category: "higiene",
     img: brush,
     stock:5,
+    sizes:  [
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 3,
@@ -56,6 +70,20 @@ export const MOCK_DATA = [
     category: "juguetes",
     img: mouse,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 4,
@@ -65,6 +93,20 @@ export const MOCK_DATA = [
     category: "higiene",
     img: grooming,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
 
   {
@@ -75,6 +117,20 @@ export const MOCK_DATA = [
     category: "alimento",
     img: catFood,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 6,
@@ -84,6 +140,20 @@ export const MOCK_DATA = [
     category: "juguetes",
     img: toy,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 7,
@@ -93,6 +163,20 @@ export const MOCK_DATA = [
     category: "alimento",
     img: dogFood,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 8,
@@ -102,6 +186,20 @@ export const MOCK_DATA = [
     category: "alimento",
     img: petFood,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 9,
@@ -111,6 +209,20 @@ export const MOCK_DATA = [
     category: "alimento",
     img: pets,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 10,
@@ -143,6 +255,20 @@ export const MOCK_DATA = [
     category: "higiene",
     img: shampoo,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 12,
@@ -152,6 +278,20 @@ export const MOCK_DATA = [
     category: "medicina",
     img: medicine,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 13,
@@ -161,6 +301,20 @@ export const MOCK_DATA = [
     category: "juguetes",
     img: petToy,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 14,
@@ -170,6 +324,20 @@ export const MOCK_DATA = [
     category: "higiene",
     img: cepillo,
     stock:5,
+    sizes:[
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      },
+      {
+        value: null,
+        label: null
+      }
+     ],
   },
   {
     id: 15,
