@@ -12248,10 +12248,96 @@ section:nth-child(4) {
   stroke-dashoffset: -1000;
 }
 
+@media (max-width: 1600px) {
+  #section1 {
+    margin-top: 4rem;
+    background-color: white;
+  }
+  #section1 .position-relative-make {
+    width: 100%;
+    height: 70%;
+    background-image: url(../img/index/vista-frontal-hermoso-perro-espacio-copia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #section1 .position {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 50vh;
+    padding: 20px;
+    height: max-content;
+    border-radius: 30px;
+    background-color: white;
+  }
+  #section1 .position .font-h1 {
+    letter-spacing: -0.05em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #695997;
+    font-size: 2rem;
+  }
+  #section1 .box-info {
+    border-radius: 0;
+  }
+  #section1 .box-info .btn-service {
+    padding-right: 2rem;
+  }
+  section:nth-child(2) {
+    margin-top: 10px;
+    height: max-content;
+  }
+  section:nth-child(2) .card-body {
+    padding-left: 100px;
+  }
+  section:nth-child(3) {
+    height: max-content;
+  }
+  section:nth-child(3) .imgSticker {
+    width: 150px;
+    position: absolute;
+    top: -130px;
+  }
+  section:nth-child(4) {
+    height: max-content;
+  }
+}
+@media (max-width: 1100px) {
+  #section1 {
+    position: relative;
+    height: 100vh;
+    width: 100;
+  }
+  #section1 .position-relative-make {
+    width: 100%;
+    height: 70%;
+    background-image: url(../img/index/vista-frontal-hermoso-perro-espacio-copia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #section1 .position {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 35vh;
+    padding: 20px;
+  }
+  #section1 .position .font-h1 {
+    letter-spacing: -0.05em;
+    font-family: "Josefin Sans", sans-serif;
+    color: #695997;
+    font-size: 1.5rem;
+  }
+  #section1 .box-info {
+    border-radius: 0;
+  }
+  #section1 .box-info .btn-service {
+    padding-right: 2rem;
+  }
+}
 @media (max-width: 768px) {
   #section1 {
     position: relative;
-    height: 220vh;
+    height: 150vh;
   }
   #section1 .position-relative-make {
     position: absolute;
@@ -12282,8 +12368,11 @@ section:nth-child(4) {
     padding-right: 2rem;
   }
   section:nth-child(2) {
-    margin-top: 10px;
     height: max-content;
+    padding-top: 20px;
+  }
+  section:nth-child(2) .card-body {
+    padding-left: 100px;
   }
   section:nth-child(3) {
     height: max-content;
